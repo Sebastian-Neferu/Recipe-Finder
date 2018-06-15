@@ -1,4 +1,4 @@
-Recipe-Finder
+# Recipe-Finder
 
 Practice app for learning to code in modern JavaScript (ES6, Webpack 4, Babel etc.).
 Coded along as part of the Udemy course "The Complete JavaScript Course: Build A Real-World Project". 
