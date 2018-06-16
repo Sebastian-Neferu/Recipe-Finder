@@ -139,9 +139,11 @@ const controlLike = () => {
     // User has NOT yet liked current recipe
     if (!state.likes.isLiked(currentID)) {
         // Add like to the state
-        const newLike = state.likes.addLike(state.recipe.title,
-        state.recipe.author,
-        state.recipe.img
+        const newLike = state.likes.addLike(
+            currentID,
+            state.recipe.title,
+            state.recipe.author,
+            state.recipe.img
         );
             
 
@@ -149,7 +151,7 @@ const controlLike = () => {
         // Toggle the like button
         likesView.toggleLikeBtn(true);
         // Add like to UI list
-        
+        likesView.renderLike(newLike);
         // User HAS liked current recipe
     } else {
         // Remove like from the state
